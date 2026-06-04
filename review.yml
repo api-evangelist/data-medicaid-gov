@@ -1,0 +1,19 @@
+name: Medicaid Open Data
+description: Medicaid Open Data DKAN open-data API live-verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-medicaid-gov/refs/heads/main/review.yml
+created: '2026-06-04'
+modified: '2026-06-04'
+reviews:
+  - date: '2026-06-04'
+    rating: 4
+    summary: >-
+      Medicaid Open Data runs DKAN and exposes a live, standardized open-data catalog API. The
+      endpoint was probed and returned a valid DKAN JSON response reporting approximately 255 datasets.
+      Because it runs DKAN, the full standard action/search API surface is available and consistent with all other DKAN portals.
+    endpoints:
+      - url: https://data.medicaid.gov/api/1/search?page-size=1
+        status: 200
+        note: Live DKAN API response verified during inventory probe.
+      - url: https://data.medicaid.gov
+        status: 200
+        note: Portal home.

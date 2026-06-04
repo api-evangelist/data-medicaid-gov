@@ -1,0 +1,58 @@
+aid: data-medicaid-gov
+name: Medicaid Open Data
+description: >-
+  Medicaid Open Data is a federal government open-data portal for United States running DKAN.
+  It exposes the DKAN catalog API, a standardized machine-readable interface over approximately 255 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs DKAN, it shares a
+  consistent API surface with every other DKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/data-medicaid-gov/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - DKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Federal Government
+  - United States
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: data-medicaid-gov:catalog
+    name: Medicaid Open Data DKAN API
+    description: >-
+      DKAN open-data API for Medicaid Open Data, covering a catalog of 255 datasets. Provides the DKAN search API (/api/1/search), the metastore (/api/1/metastore/schemas/dataset/items), and a CKAN-compatible action API where enabled. Base URL https://data.medicaid.gov/api/1/.
+    humanURL: https://data.medicaid.gov
+    baseURL: https://data.medicaid.gov/api/1
+    tags:
+      - DKAN
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+      - Metastore
+    properties:
+      - type: Documentation
+        url: https://dkan.readthedocs.io/en/latest/
+      - type: Website
+        url: https://data.medicaid.gov
+      - type: x-api-endpoint
+        url: https://data.medicaid.gov/api/1/search?page-size=1
+common:
+  - type: Website
+    url: https://data.medicaid.gov
+  - type: Documentation
+    url: https://dkan.readthedocs.io/en/latest/
+  - type: Plans
+    url: plans/data-medicaid-gov-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/data-medicaid-gov-rate-limits.yml
+  - type: FinOps
+    url: finops/data-medicaid-gov-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
