@@ -41,6 +41,8 @@ apis:
       - type: x-api-endpoint
         url: https://data.medicaid.gov/api/1/search?page-size=1
 common:
+  - type: DomainSecurity
+    url: security/data-medicaid-gov-domain-security.yml
   - type: Website
     url: https://data.medicaid.gov
   - type: Documentation
